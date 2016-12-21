@@ -1,0 +1,53 @@
+/*
+ * New Wave 3 (c) by Robert 'Bobby' Zenz
+ *
+ * New Wave 3 is licensed under a
+ * Creative Commons Attribution-ShareAlike 3.0 Unported License.
+ *
+ * You should have received a copy of the license along with this
+ * work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
+ * 
+ * Based on the New Wave theme created by Anton Kerezov (dilomo)
+ */
+ 
+/*
+ * Text entry boxes and similar.
+ */
+
+.entry {
+	border: 2px solid transparent;
+	border-image: url("Images/Shadows/entry-shadow-in.png") 2;
+	color: @primary-color-dark;
+	padding: 3px 4px 3px 4px;
+}
+
+.entry:focus {
+	border-image: url("Images/Shadows/entry-focus.png") 2;
+}
+
+GtkComboBox.combobox-entry .button {
+	border: 2px solid transparent;
+	border-image: url("Images/Combo/combo-normal.png") 2;
+}
+
+GtkComboBox.combobox-entry .button:hover {
+	border-image: url("Images/Combo/combo-prelight.png") 2;
+}
+
+GtkComboBox.combobox-entry .button:active {
+	background-image: linear-gradient(0deg, #f8bb90, #d28974);
+	border-image: url("Images/Combo/combo-pressed.png") 2;
+}
+
+GtkComboBox.combobox-entry .button:insensitive {
+	border-image: url("Images/Combo/combo-inactive.png") 2;
+}
+
+GtkComboBox.combobox-entry .entry {
+	border-image: url("Images/Combo/combo-entry.png") 2;
+}
+
+GtkComboBox.combobox-entry .entry:focus {
+	border-image: url("Images/Combo/combo-entry-focus.png") 2;
+}
+

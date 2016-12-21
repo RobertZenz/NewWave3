@@ -1,0 +1,85 @@
+/*
+ * New Wave 3 (c) by Robert 'Bobby' Zenz
+ *
+ * New Wave 3 is licensed under a
+ * Creative Commons Attribution-ShareAlike 3.0 Unported License.
+ *
+ * You should have received a copy of the license along with this
+ * work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
+ * 
+ * Based on the New Wave theme created by Anton Kerezov (dilomo)
+ */
+ 
+/*
+ * File for all kinds of buttons.
+ */
+
+
+/* Main */
+.button {
+	background-color: transparent;
+	background-image: linear-gradient(0deg, #c0c0c0, #dddddd);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: 3px solid transparent;
+	border-image: url("Images/Buttons/button-normal.png") 3;
+	padding: 1px;
+}
+
+.button * {
+	color: @primary-color-dark;
+}
+
+/* Disabled */
+.button:insensitive {
+	background-image: linear-gradient(0deg, #d5d5d5, #e8e8e8);
+	border-image: url("Images/Buttons/button-insensitive.png") 3;
+}
+.button *:insensitive {
+	background-color: transparent;
+	color: @color-disabled;
+	text-shadow: 1px 1px @color-disabled-shadow;
+}
+
+/* Pressed */
+.button:active {
+	background-image: linear-gradient(0deg, #cec5bc, #b8aca8);
+	border-image: url("Images/Buttons/button-pressed.png") 3;
+}
+
+/* Pressed and Mouseover */
+.button:active:hover {
+	background-image:
+		url("Images/Buttons/button-focus.png"),
+		linear-gradient(0deg, #cec5bc, #b8aca8);
+	border-image: url("Images/Buttons/button-pressed.png") 3;
+}
+
+/* Focused */
+.button:focus {
+	background-image:
+		url("Images/Buttons/button-focus.png"),
+		linear-gradient(0deg, #c0c0c0, #dddddd);
+}
+
+/* Mouseover */
+.button:hover {
+	background-image: linear-gradient(0deg, #f3845a, #fddc9a);
+	border-image: url("Images/Buttons/button-prelight.png") 3;
+}
+
+/* Default */
+.button.default {
+	background-image:
+		url("Images/Buttons/button-default.png"),
+		linear-gradient(0deg, #c0c0c0, #dddddd);
+}
+
+/* Columns (lists, tables). */
+column-header .button {
+	background-image: linear-gradient(0deg, #d4d4d4, #dcdcdc);
+	border-image: url("Images/ListHeaders/list_header.png") 3;
+	padding: 0px;
+}
+

@@ -1,0 +1,33 @@
+New Wave 3
+==========
+
+New Wave 3 is a port of the New Wave GTK+ theme to GTK+ 3.10 (Ubuntu 14.04).
+
+It is currently very incomplete. But the overall goal is to look exactly the
+same as New Wave 0.8.2.
+
+
+License
+-------
+
+[Based on the New Wave theme created by Anton Kerezov (dilomo)][new-wave-launchpad].
+
+Licensed under "Creative Commons 3.0 Attribution-Share Alike".
+
+
+How to use
+----------
+
+Copy (or link) the `gtk-3.0` directory into your `$HOME/config/` directory.
+
+
+How to develop
+--------------
+
+The `gtk-3.0` directory contains the images and the CSS files, so you just need
+to edit those. After that you can use something like the widget factory to test
+your changes.
+
+
+ [new-wave-launchpad]: https://launchpad.net/Anton
+

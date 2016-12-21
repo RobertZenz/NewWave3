@@ -1,0 +1,60 @@
+/*
+ * New Wave 3 (c) by Robert 'Bobby' Zenz
+ *
+ * New Wave 3 is licensed under a
+ * Creative Commons Attribution-ShareAlike 3.0 Unported License.
+ *
+ * You should have received a copy of the license along with this
+ * work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
+ * 
+ * Based on the New Wave theme created by Anton Kerezov (dilomo)
+ */
+ 
+
+.menubar {
+	background-image: url("Images/MenuMenubar/MenuBarBg.png");
+	background-position: left bottom;
+	border: none;
+	padding: 1px 1px 1px 1px;
+}
+
+
+.menubar > .menuitem {
+	padding: 2px 6px 2px 7px;
+}
+
+.menubar .menuitem * {
+	color: @primary-color-light;
+}
+
+.menubar .menuitem:active {
+	background-color: transparent;
+	background-image: url("Images/MenuMenubar/mb-item-dark.png");
+}
+
+
+.menu {
+	background-color: @primary-color-light;
+	border: none;
+	border-image: url("Images/MenuMenubar/combomenu.png") 4 / 2px stretch;
+	padding: 3px;
+}
+
+.menu .button {
+}
+
+.menu > .menuitem {
+	padding: 2px 4px 2px 4px;
+}
+
+.menu > .menuitem > * {
+	color: @primary-color-dark;
+}
+
+
+.menu > .menuitem:hover {
+	background-color: transparent;
+	border-image: url("Images/MenuMenubar/menuitem.png") 4 / 2px stretch;
+	color: @primary-color-dark;
+}
+
