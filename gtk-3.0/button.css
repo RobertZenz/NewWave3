@@ -46,6 +46,7 @@
 .button:active {
 	background-image: linear-gradient(0deg, #cec5bc, #b8aca8);
 	border-image: url("Images/Buttons/button-pressed.png") 3;
+	-GtkButton-child-displacement-y: 1;
 }
 
 /* Pressed and Mouseover */
