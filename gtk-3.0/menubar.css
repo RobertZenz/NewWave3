@@ -11,50 +11,56 @@
  */
  
 
+/* The bar itself. */
 .menubar {
 	background-image: url("Images/MenuMenubar/MenuBarBg.png");
 	background-position: left bottom;
 	border: none;
-	padding: 1px 1px 1px 1px;
+	padding: 0px 1px 2px 1px;
 }
 
 
+/* The menu bar entries. */
 .menubar > .menuitem {
-	padding: 2px 6px 2px 7px;
+	padding: 3px 6px 1px 7px;
 }
 
-.menubar .menuitem * {
+.menubar > .menuitem > * {
 	color: @primary-color-light;
 }
 
-.menubar .menuitem:active {
-	background-color: transparent;
-	background-image: url("Images/MenuMenubar/mb-item-dark.png");
+.menubar > .menuitem:hover {
+	background-color: #d9d9d9;
+	border-image: url("Images/MenuMenubar/menubar-item-baked.png") 4 / 4px stretch;
+}
+
+.menubar > .menuitem *:hover {
+	background-color: #ff0000;
+	background-image: none;
+	color: @primary-color-dark;
+}
+
+.menubar > .menuitem:hover > * {
+	color: @primary-color-dark;
 }
 
 
+/* The menu. */
 .menu {
 	background-color: @primary-color-light;
 	border: none;
-	border-image: url("Images/MenuMenubar/combomenu.png") 4 / 2px stretch;
-	padding: 3px;
-}
-
-.menu .button {
+	border-image: url("Images/MenuMenubar/combomenu.png") 4 / 4px stretch;
+	padding: 4px;
 }
 
 .menu > .menuitem {
 	padding: 2px 4px 2px 4px;
 }
 
-.menu > .menuitem > * {
-	color: @primary-color-dark;
-}
-
-
 .menu > .menuitem:hover {
 	background-color: transparent;
-	border-image: url("Images/MenuMenubar/menuitem.png") 4 / 2px stretch;
+	background-image: url("Images/MenuMenubar/menuitem-bg-baked.png");
+	border-image: url("Images/MenuMenubar/menuitem-baked.png") 4 / 4px stretch;
 	color: @primary-color-dark;
 }
 
