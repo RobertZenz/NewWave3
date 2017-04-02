@@ -1,0 +1,54 @@
+/*
+ * New Wave 3 (c) by Robert 'Bobby' Zenz
+ *
+ * New Wave 3 is licensed under a
+ * Creative Commons Attribution-ShareAlike 3.0 Unported License.
+ *
+ * You should have received a copy of the license along with this
+ * work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
+ * 
+ * Based on the New Wave theme created by Anton Kerezov (dilomo)
+ */
+ 
+/*
+ * Checkboxes and similar.
+ */
+
+
+/* Main */
+.check {
+	background-color: transparent;
+	background-image: url("Images/Check-Radio/check-normal.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+
+/* Disabled */
+.check:insensitive {
+	background-image: url("Images/Check-Radio/check-normal-insensitive.png");
+}
+.check:active:insensitive {
+	background-image: url("Images/Check-Radio/check-mark-insensitive.png");
+}
+GtkCheckButton GtkLabel:insensitive {
+	background-color: transparent;
+	color: @color-disabled;
+	text-shadow: 1px 1px @color-disabled-shadow;
+}
+
+/* Pressed */
+.check:active {
+	background-image: url("Images/Check-Radio/check-mark.png");
+}
+
+/* Pressed and mouseover */
+.check:active:hover {
+	background-image: url("Images/Check-Radio/check-mark-prelight.png");
+}
+
+/* Mouseover */
+.check:hover {
+	background-image: url("Images/Check-Radio/check-normal-prelight.png");
+}
+
