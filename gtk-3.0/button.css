@@ -24,7 +24,7 @@
 	background-size: 100% 100%;
 	border: 3px solid transparent;
 	border-image: url("Images/Buttons/button-normal.png") 3;
-	padding: 1px;
+	padding: 3px;
 }
 
 .button * {

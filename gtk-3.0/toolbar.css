@@ -18,6 +18,16 @@
 	padding: 1px 4px 1px 4px;
 }
 
+.toolbar .button {
+	padding: 0px;
+}
+
+.toolbar .button:not(:hover) {
+	background: transparent;
+	border: none;
+	padding: 3px;
+}
+
 .toolbar .entry:active {
 	-GtkButton-child-displacement-y: 1;
 }
