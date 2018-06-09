@@ -45,6 +45,7 @@
 	/*font-size: 8px;*/
 	padding: 0px;
 	transition: none;
+	text-shadow: none;
 }
 
 GtkWindow {
